@@ -10,8 +10,17 @@ const app = new Vue( {
   el: '#app',
   
   data: {
-    titolo: 'Primo Titotlo in Vue',
-    image: 'http://placeimg.com/640/480/nature'
+    titolo: 'Clicca il bottone per cambiare l\' Immagine',
+    image: 'http://placeimg.com/640/480/nature',
+    altImage: 'nature'
+  },
+
+  methods: {
+    changeImage() {
+      this.image === 'http://placeimg.com/640/480/nature' ? this.image = 'http://placeimg.com/640/480/animals' : this.image = 'http://placeimg.com/640/480/nature';
+
+      this.altImage === 'nature' ? this.altImage = 'animals' : this.altImage = 'nature';
+    }
   }
 
 });

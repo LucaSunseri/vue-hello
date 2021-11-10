@@ -11,6 +11,7 @@ const app = new Vue( {
   
   data: {
     titolo: 'Primo Titotlo in Vue',
+    image: 'http://placeimg.com/640/480/nature'
   }
 
 });

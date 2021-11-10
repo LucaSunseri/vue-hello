@@ -5,3 +5,12 @@ Bonus:
 Aggiungere alla pagina un’immagine, presa anch’essa da un data.
 */
 
+const app = new Vue( {
+
+  el: '#app',
+  
+  data: {
+    titolo: 'Primo Titotlo in Vue',
+  }
+
+});
